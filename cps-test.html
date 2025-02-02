@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is a Hello Document</title>
+    <title>This is a Cps test webpage</title>
 </head>
 <body>
     <!--
@@ -12,8 +12,9 @@
     <input type="button" onclick="alert('This is call from lya: Awwwww')" value="Click Me" />
     <img src="1.gif" alt="image 1" onmouseover="alert('Hi'); this.src='1.png'"
     onmouseout="alert('Goodbye'); this.src='1.gif'">-->
-    <input type="button" value="Click me!" class="button1" onclick = "GoToCps()">
-    <script src="to-cps.js"></script>
+    <input type="button" value="Back" class="button1" onclick="BackToIndex()">
+    <input type="button" class="image-button" onclick="alert('hello!')" value=" ">
+    <script src="back.js"></script>
     <style>
         .button1 {
             font-family: 'Times New Roman', Times, serif; /* 设置字体为 Times New Roman */
@@ -52,6 +53,23 @@
             background-image: linear-gradient(to bottom, #5ffaff, #7b9efe); /* 从上到下的渐变 */
             height: 100vh; /* 确保背景覆盖整个页面高度 */
             margin: 0; /* 移除默认的页面间距 */
+        }
+        .image-button {
+            display: block; /* 使按钮成为块级元素 */
+            margin: 0 auto; /* 水平居中 */
+            margin-top: 10px;
+            border: none; /* 去掉边框 */
+            padding: 0;
+            background-image: url('1.png'); /* 设置按钮背景图片 */
+            background-size: cover; /* 背景图片覆盖整个按钮 */
+            width: 100px; /* 按钮的宽度 */
+            height: 100px; /* 按钮的高度 */
+            cursor: pointer; /* 鼠标悬停时的光标 */
+        }
+        
+        /* 可选：鼠标悬停时改变按钮效果 */
+        .image-button:hover {
+            opacity: 0.8; /* 鼠标悬停时改变透明度 */
         }
     </style>
 </body>
