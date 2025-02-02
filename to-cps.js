@@ -1,3 +1,3 @@
 function GoToCps(){
-    window.location.href='cps-test.html';
+    window.location.href='./cps/cps-test.html';
 }
