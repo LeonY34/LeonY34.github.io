@@ -1,6 +1,6 @@
 function GoToCps(){
-    window.location.href='./cps/cps-test.html';
+    window.location.href='https://leony34.github.io/cps';
 }
 function GoToBlog(){
-    window.location.href='https://LeonY34.github.io/blog';
+    window.location.href='https://leony34.github.io/blog';
 }
