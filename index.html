@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>这是lya的主页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 </head>
 <body>
     <!--
@@ -16,7 +18,19 @@
     <input type="button" value="Blog" class="Button" onclick="GoToBlog()">
     <div id="gitalk-container"></div>
     <script src="trans.js"></script>
-    <script src="gitalk.js"></script>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: 'Ov23li88tDepTLlGFzht',
+            clientSecret: 'b3aee24393b2d1ee67f7b42bced5abb3743d6d87',
+            repo: 'CleverTalk',      // The repository of store comments,
+            owner: 'LeonY34',
+            admin: ['LeonY34'],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+          
+        gitalk.render('gitalk-container')
+    </script>
     <style>
         .Button {
             font-family: 'Times New Roman', Times, serif; /* 设置字体为 Times New Roman */
