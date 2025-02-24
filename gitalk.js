@@ -1,3 +1,6 @@
+import 'gitalk/dist/gitalk.css'
+import Gitalk from 'gitalk'
+
 const gitalk = new Gitalk({
     clientID: 'Ov23li88tDepTLlGFzht',
     clientSecret: 'b3aee24393b2d1ee67f7b42bced5abb3743d6d87',
